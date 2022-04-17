@@ -18,7 +18,8 @@
     - bluez
     - bluez-utils
     - blueman
-    - pulseaudio
+    - pipewire
+    - pipewire-pulse
    state: present
 
 - name: Install archival utils
