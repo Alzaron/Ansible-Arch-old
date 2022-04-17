@@ -15,6 +15,9 @@
     - ufw
     - variety
     - feh
+    - bluez
+    - bluez-utils
+    - blueman
    state: present
 
 - name: Install archival utils
