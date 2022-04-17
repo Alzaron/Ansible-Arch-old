@@ -1,0 +1,8 @@
+- name: install thunar
+  community.general.pacman:
+   name: 
+    - thunar
+    - thunar-volman
+    - gvfs-mtp
+   state: present 
+

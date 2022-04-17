@@ -1,0 +1,40 @@
+- name: install basic utils, shells, apps
+  community.general.pacman:
+   name:
+    - kitty
+    - flameshot
+    - gimp
+    - git
+    - thefuck
+    - tmux
+    - lsd
+    - vim
+    - source-highlight
+    - tree
+    - base-devel
+    - ufw
+    - variety
+    - feh
+   state: present
+
+- name: Install archival utils
+  pacman:
+    name:
+      - atool
+      - p7zip
+      - unrar
+      - unzip
+      - xz
+      - zip
+      - bzip2
+      - gzip
+      - tar
+    state: present
+
+- name: Install download utils
+  pacman:
+    name:
+      - curl
+      - wget
+    state: present
+

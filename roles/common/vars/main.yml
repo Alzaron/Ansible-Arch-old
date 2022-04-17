@@ -1,0 +1,60 @@
+### Playbook Configuration Variables
+# You may modify the following variables to customize the playbook to your
+# specific needs, however do not remove any variables, they are all required
+# for the playbook to function.
+
+## User info
+username: none 
+
+## Task Configuration
+setup_zsh: True
+
+## Dotfiles
+## Please make sure to update 
+pull_dotfiles: False
+
+dotfiles:
+    url: https://github.com/alzaron/dotfiles.git
+    destination: projects/dotfiles
+    rcup_flags: -fx README.md
+
+
+## App Preferences
+## ===========================
+# Web Browser
+install_firefox: True
+
+## Installs LibreOffice Fresh when True
+install_office: True
+
+## Install neovim
+install_neovim: True
+## ===========================
+
+## Install discord
+install_discord: True
+
+## Install obsidian
+install_obsidian: True
+
+## Install Thundar
+install_thunar: True
+
+## Install yay apps
+install_yay_apps: True
+
+## AUR vars
+## ===========================
+use_aur: True
+
+aur:
+    dir: aur
+    packages:
+        - yay
+        - downgrade
+        - zplug
+        - miller
+        - myrepos
+        - ctmg
+        - spiped
+## ===========================

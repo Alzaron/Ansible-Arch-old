@@ -1,0 +1,49 @@
+- name: check updates
+  pacman: 
+   update_cache: yes
+   upgrade: yes
+
+
+# Configure pacman (colorize and repos)
+- include: pacman.yml
+
+# Basic apps (vlc, kitty, etc.)
+- include: core-apps.yml
+
+# Install and configure zsh
+- include: zsh.yml
+  when: setup_zsh == True
+
+# Install and configure neovim
+- include: neovim.yml
+  when: install_neovim == True
+
+
+# Web Browser
+- include: "firefox.yml"
+
+# Office
+- include: office.yml
+  when: install_office == True
+
+# obsidian
+- include: obsidian.yml
+  when: install_obsidian == True
+  
+# AUR apps
+- include: aur.yml
+  when: use_aur == True
+
+# Dotfiles
+- include: dotfiles.yml
+  when: pull_dotfiles == True
+
+
+# Thundar
+- include: thunar.yml
+  when: install_thunar == True
+
+
+# yay apps
+- include: yay.yml
+  when: install_yay_apps == True
