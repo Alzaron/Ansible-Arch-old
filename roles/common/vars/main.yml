@@ -15,7 +15,7 @@ pull_dotfiles: True
 
 dotfiles:
     url: https://github.com/alzaron/dotfiles.git
-    destination: projects/dotfiles
+    destination: movetodotfile
     rcup_flags: -fx README.md
 
 
