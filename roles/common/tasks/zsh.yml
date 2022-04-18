@@ -21,14 +21,6 @@
    name: "{{ username }}"
    shell: /usr/bin/zsh
 
-- name: copy zsh dotfile
-  copy: 
-   src: user_home/.zshrc 
-   dest: /home/{{ username }}/.zshrc
-   force: False
-   owner: "{{ username }}"
-   group: "{{ username }}"
-   mode: u+rw,g+r,o--
 
 - name: copy zsh p10k dotfile
   copy: 
