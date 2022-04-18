@@ -4,7 +4,7 @@
 # for the playbook to function.
 
 ## User info
-username: none 
+username: none
 
 ## Task Configuration
 setup_zsh: True

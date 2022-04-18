@@ -1,6 +1,5 @@
-
-- aur: name=spotify user={{ username}}
-- aur: name=sublime-text-4 user={{ username}}
-- aur: name=xmind user={{ username}}
-- aur: name=termite user={{ username}}
-- aur: name=rcm user={{ username}}
+- aur: name=spotify user={{ username }} 
+- aur: name=sublime-text-4 user={{ username }} 
+- aur: name=xmind user={{ username }} 
+- aur: name=termite user={{ username }} 
+- aur: name=rcm user={{ username }} 
