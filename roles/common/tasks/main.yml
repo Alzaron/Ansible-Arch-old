@@ -7,14 +7,14 @@
 # Configure pacman (colorize and repos)
 - include_tasks: pacman.yml
 
-# Basic apps (vlc, kitty, etc.)
+# Basic apps
 - include_tasks: core-apps.yml
 
 # Install and configure zsh
 - include_tasks: zsh.yml
   when: setup_zsh == True
 
-# Install and configure neovim
+# Install neovim
 - include_tasks: neovim.yml
   when: install_neovim == True
 
@@ -34,6 +34,11 @@
 - include_tasks: aur.yml
   when: use_aur == True
 
+
+# yay apps
+- include_tasks: yay.yml
+  when: install_yay_apps == True
+
 # Dotfiles
 - include_tasks: dotfiles.yml
   when: pull_dotfiles == True
@@ -43,7 +48,3 @@
 - include_tasks: thunar.yml
   when: install_thunar == True
 
-
-# yay apps
-- include_tasks: yay.yml
-  when: install_yay_apps == True
