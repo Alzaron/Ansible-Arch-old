@@ -5,45 +5,45 @@
 
 
 # Configure pacman (colorize and repos)
-- include: pacman.yml
+- include_tasks: pacman.yml
 
 # Basic apps (vlc, kitty, etc.)
-- include: core-apps.yml
+- include_tasks: core-apps.yml
 
 # Install and configure zsh
-- include: zsh.yml
+- include_tasks: zsh.yml
   when: setup_zsh == True
 
 # Install and configure neovim
-- include: neovim.yml
+- include_tasks: neovim.yml
   when: install_neovim == True
 
 
 # Web Browser
-- include: "firefox.yml"
+- include_tasks: "firefox.yml"
 
 # Office
-- include: office.yml
+- include_tasks: office.yml
   when: install_office == True
 
 # obsidian
-- include: obsidian.yml
+- include_tasks: obsidian.yml
   when: install_obsidian == True
   
 # AUR apps
-- include: aur.yml
+- include_tasks: aur.yml
   when: use_aur == True
 
 # Dotfiles
-- include: dotfiles.yml
+- include_tasks: dotfiles.yml
   when: pull_dotfiles == True
 
 
 # Thundar
-- include: thunar.yml
+- include_tasks: thunar.yml
   when: install_thunar == True
 
 
 # yay apps
-- include: yay.yml
+- include_tasks: yay.yml
   when: install_yay_apps == True

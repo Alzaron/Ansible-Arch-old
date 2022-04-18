@@ -11,7 +11,7 @@ setup_zsh: True
 
 ## Dotfiles
 ## Please make sure to update 
-pull_dotfiles: False
+pull_dotfiles: True
 
 dotfiles:
     url: https://github.com/alzaron/dotfiles.git

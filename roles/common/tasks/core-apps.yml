@@ -1,45 +1,46 @@
-- name: install basic utils, shells, apps
+- name: install basic stuff
   community.general.pacman:
    name:
+   # Terminal
     - kitty
-    - flameshot
-    - gimp
-    - git
-    - thefuck
     - tmux
+
+
+    #DownloadUtil
+    - git
+    - wget
+    - curl
+    # CLI and vim
+    - thefuck
     - lsd
     - vim
     - source-highlight
     - tree
     - base-devel
+    #Firewall
     - ufw
+    #Screenshot, background and grafic
+    - flameshot
+    - gimp
     - variety
     - feh
+    # bluetooth and audio
     - bluez
     - bluez-utils
     - blueman
     - pipewire
     - pipewire-pulse
+    # ziptools
+    - atool
+    - p7zip
+    - unrar
+    - unzip
+    - xz
+    - tar
+    - gzip
+    - bzip2
+    - zip
+    #
    state: present
 
-- name: Install archival utils
-  pacman:
-    name:
-      - atool
-      - p7zip
-      - unrar
-      - unzip
-      - xz
-      - zip
-      - bzip2
-      - gzip
-      - tar
-    state: present
-
-- name: Install download utils
-  pacman:
-    name:
-      - curl
-      - wget
-    state: present
 
