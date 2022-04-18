@@ -15,13 +15,13 @@ sudo pacman -S ansible
 ```sh
 git clone https://github.com/Alzaron/Ansible-Arch.git
 ```
-3. cd into directory
+3. Change Username or make username none Ansible-Arch/roles/common/vars/main.yml 
+
+4. cd into directory
 ```sh
 cd Ansible-Arch/roles
 ```
-4. Make file executeble
-```sh
 5. Run playbook
 ```sh
 ansible-playbook -K main.yml
-
+```
