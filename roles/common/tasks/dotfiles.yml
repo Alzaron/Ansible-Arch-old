@@ -3,7 +3,7 @@
   become: yes
   become_user: "{{ username }}"
 
-- name: Install user dotfiles
-  command: rcup -d /home/{{ username}}/{{ dotfiles.rcup_flags }}
-  become: yes
-  become_user: "{{ username }}" 
+#- name: Install user dotfiles
+#  command: rcup -d /home/{{ username}}/{{ dotfiles.rcup_flags }}
+#  become: yes
+#  become_user: "{{ username }}" 
