@@ -4,7 +4,10 @@
    # Terminal
     - kitty
     - tmux
-
+   # File Browser
+    - thunar
+    - thunar-volman
+    - gvfs-mtp
 
     #DownloadUtil
     - git
