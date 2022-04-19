@@ -8,8 +8,7 @@ https://archlinuxgui.in/download.html#sec-7
 1. Update arch and install requirement
 ```sh
 sudo pacman -Suy
-sudo pacman -S git
-sudo pacman -S ansible
+sudo pacman -S git ansible
 ```
 2. Clone reposetory
 ```sh
