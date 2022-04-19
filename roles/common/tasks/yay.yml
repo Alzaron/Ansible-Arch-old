@@ -1,5 +1,11 @@
-- aur: name=spotify user={{ username }} 
-- aur: name=sublime-text-4 user={{ username }} 
-- aur: name=xmind user={{ username }} 
-- aur: name=termite user={{ username }} 
-- aur: name=rcm user={{ username }} 
+- name: install aur software
+  become: yes
+  become_user: "{{ username }}"
+  ignore_errors: yes
+  aur:
+    use: yay
+    name:
+      - spotify
+      - sublime-text-4
+      - xmind
+      - rcm
