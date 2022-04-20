@@ -24,3 +24,8 @@ cd Ansible-Arch/roles
 ```sh
 ansible-playbook -K main.yml
 ```
+5. Copy dotfiles 
+```sh
+ansible-playbook -K main.yml
+```
+

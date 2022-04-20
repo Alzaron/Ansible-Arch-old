@@ -44,7 +44,3 @@
   when: pull_dotfiles == True
 
 
-# Thundar
-- include_tasks: thunar.yml
-  when: install_thunar == True
-
