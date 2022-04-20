@@ -15,7 +15,7 @@ sudo pacman -S git ansible
 git clone https://github.com/Alzaron/Ansible-Arch.git
 ```
 3. Change Username or make username none Ansible-Arch/roles/common/vars/main.yml 
-
+```sh
 cd ansible-arch/roles
 ```
 4. Cd into folder
@@ -30,3 +30,8 @@ ansible-playbook -K main.yml
 ```sh
 cp -Rf ~/movetodotfiles/.zshrc ~/movetodotfiles/.config ~/ 
 ```
+7. start zsh or restart terminal
+```sh
+zsh
+```
+
