@@ -16,16 +16,17 @@ git clone https://github.com/Alzaron/Ansible-Arch.git
 ```
 3. Change Username or make username none Ansible-Arch/roles/common/vars/main.yml 
 
-4. cd into directory
+cd ansible-arch/roles
+```
+4. Cd into folder
 ```sh
-cd Ansible-Arch/roles
+cd /ansible-arch/roles
 ```
 5. Run playbook
 ```sh
 ansible-playbook -K main.yml
 ```
-5. Copy dotfiles 
+6. copy dotfiles
 ```sh
-ansible-playbook -K main.yml
+cp -Rf ~/movetodotfiles/.zshrc ~/movetodotfiles/.config ~/ 
 ```
-
