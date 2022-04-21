@@ -9,3 +9,4 @@
       - sublime-text-4
       - xmind
       - rcm
+    skip_pgp_check:
