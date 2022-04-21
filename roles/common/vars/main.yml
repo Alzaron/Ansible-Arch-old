@@ -37,6 +37,7 @@ install_discord: True
 ## Install obsidian
 install_obsidian: True
 
+
 ## Install yay apps
 install_yay_apps: True
 

@@ -18,7 +18,6 @@
 - include_tasks: neovim.yml
   when: install_neovim == True
 
-
 # Web Browser
 - include_tasks: "firefox.yml"
 
@@ -34,7 +33,6 @@
 - include_tasks: aur.yml
   when: use_aur == True
 
-
 # yay apps
 - include_tasks: yay.yml
   when: install_yay_apps == True
@@ -42,5 +40,11 @@
 # Dotfiles
 - include_tasks: dotfiles.yml
   when: pull_dotfiles == True
+
+# Dotfiles
+- include_tasks: discord.yml
+  when: install_discord == True
+
+
 
 
