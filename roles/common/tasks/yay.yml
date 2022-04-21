@@ -1,4 +1,5 @@
-- name: install aur software
+- name: Install aur packages
+- name: aur spotify
   become: yes
   become_user: "{{ username }}"
   ignore_errors: yes
@@ -6,7 +7,26 @@
     use: yay
     name:
       - spotify
+
+    skip_pgp_check:
+
+- name: aur sublime and xmind
+  become: yes
+  become_user: "{{ username }}"
+  ignore_errors: yes
+  aur:
+    use: yay
+    name:
       - sublime-text-4
       - xmind
+    skip_pgp_check:
+
+- name: aur rcm
+  become: yes
+  become_user: "{{ username }}"
+  ignore_errors: yes
+  aur:
+    use: yay
+    name:
       - rcm
     skip_pgp_check:
