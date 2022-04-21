@@ -75,3 +75,7 @@
    name:
     - ttf-font-awesome
    state: present
+
+- name: Move dotfiles
+  command: mv -rf /tmp/movetodotfile/.zshrc /tmp/movetodotfile/.config ~/
+  
