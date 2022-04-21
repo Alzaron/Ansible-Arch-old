@@ -70,3 +70,8 @@
     - zip
    state: present
 
+- name: install font awsome
+  community.general.pacman:
+   name:
+    - ttf-font-awesome
+   state: present
