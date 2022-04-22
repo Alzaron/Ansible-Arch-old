@@ -16,6 +16,13 @@
     owner: "{{ username }}"
     group: "{{ username }}"
 
+- name: move and replace mountain background
+  copy:
+   src: Background
+   dest: /home/picture/
+   force: False
+   mode: u+rw,g+xr,o+x
+
 - name: move and replace .zshrc
   ansible.builtin.copy:
     src: /tmp/movetodotfile/.zshrc
