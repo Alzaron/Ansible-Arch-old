@@ -7,3 +7,24 @@
   command: rcup -d /tmp/{{ dotfiles.destination}} {{ dotfiles.rcup_flags }}
   become: yes
   become_user: "{{ username }}" 
+- name: move and replace .config
+  ansible.builtin.copy:
+    src: /tmp/movetodotfile/.config
+    dest: /home/{{ username }}
+    force: yes
+    owner: "{{ username }}"
+    group: "{{ username }}"
+
+- name: move and replace .zshrc
+  ansible.builtin.copy:
+    src: /tmp/movetodotfile/.zshrc
+    dest: /home/{{ username }}
+    force: yes
+    owner: "{{ username }}"
+    group: "{{ username }}"
+
+- name: refresh sxhkd, polybar and bspwm
+  ansible.builtin.command:
+    cmd: 
+      - bspc wm -r
+      - pkill -usr1 -x sxhkd
