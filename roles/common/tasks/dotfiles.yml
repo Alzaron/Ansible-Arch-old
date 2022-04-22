@@ -19,7 +19,7 @@
 - name: move and replace mountain background
   copy:
    src: Background
-   dest: /home/picture/
+   dest: /home/{{ username }}/Pictures
    force: False
    mode: u+rw,g+xr,o+x
 
