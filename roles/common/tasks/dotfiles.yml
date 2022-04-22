@@ -23,8 +23,10 @@
     owner: "{{ username }}"
     group: "{{ username }}"
 
-- name: refresh sxhkd, polybar and bspwm
+- name: refresh bspwm
   ansible.builtin.command:
-    cmd: 
-      - bspc wm -r
-      - pkill -usr1 -x sxhkd
+    bspc wm -r
+      - 
+- name: refresh sxhkd
+  ansible.builtin.command:
+    pkill -usr1 -x sxhkd
