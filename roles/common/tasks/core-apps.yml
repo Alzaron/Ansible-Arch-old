@@ -3,6 +3,7 @@
    name:
     - kitty
     - tmux
+    - mlocate
    state: present
 - name: Install FileBrowser
   community.general.pacman:
