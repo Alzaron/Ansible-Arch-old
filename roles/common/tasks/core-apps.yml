@@ -1,7 +1,6 @@
 - name: install Terminal 
   community.general.pacman:
    name:
-   # Terminal
     - kitty
     - tmux
    state: present
@@ -32,12 +31,12 @@
     - base-devel
    state: present
 
-- name: install #Firewall
+- name: install Firewall
   community.general.pacman:
    name:
     - ufw
    state: present
-- name: Screenshot background and grafic and clipmenu
+- name: Screenshot background, grafic and clipmenu
   community.general.pacman:
    name:
     - flameshot
@@ -75,7 +74,3 @@
    name:
     - ttf-font-awesome
    state: present
-
-- name: Move dotfiles
-  command: mv -rf /tmp/movetodotfile/.zshrc /tmp/movetodotfile/.config ~/
-  
