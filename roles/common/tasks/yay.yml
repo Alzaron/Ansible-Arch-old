@@ -29,3 +29,24 @@
     name:
       - rcm
     skip_pgp_check:
+
+- name: aur tweetdeck
+  become: yes
+  become_user: "{{ username }}"
+  ignore_errors: yes
+  aur:
+    use: yay
+    name:
+      - atomic-tweetdeck
+    skip_pgp_check:
+
+
+- name: aur VS code
+  become: yes
+  become_user: "{{ username }}"
+  ignore_errors: yes
+  aur:
+    use: yay
+    name:
+      - visual-studio-code-bin
+    skip_pgp_check:
