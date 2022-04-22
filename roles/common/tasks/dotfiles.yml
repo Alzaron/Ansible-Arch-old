@@ -7,6 +7,7 @@
   command: rcup -d /tmp/{{ dotfiles.destination}} {{ dotfiles.rcup_flags }}
   become: yes
   become_user: "{{ username }}" 
+
 - name: move and replace .config
   ansible.builtin.copy:
     src: /tmp/movetodotfile/.config

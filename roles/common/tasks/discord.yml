@@ -1,5 +1,6 @@
-- name: install discord
+- name: install chat apps
   community.general.pacman:
    name: 
     - discord
+    - wire-desktop
    state: present 
