@@ -12,10 +12,12 @@ sudo pacman -S git ansible
 ```
 2. Clone reposetory
 ```sh
-git clone https://github.com/Alzaron/Ansible-Arch.git
+git clone https://github.com/Alzaron/ansible-arch.git
 ```
-3. Change Username or make username none Ansible-Arch/roles/common/vars/main.yml 
+3. Change username or make username none Ansible-Arch/roles/common/vars/main.yml 
 ```sh
+vim ~/ansible-arch/roles/common/vars/main.yml 
+```
 cd ansible-arch/roles
 ```
 4. Cd into folder
@@ -26,12 +28,29 @@ cd /ansible-arch/roles
 ```sh
 ansible-playbook -K main.yml
 ```
-6. copy dotfiles
-```sh
-cp -Rf ~/movetodotfiles/.zshrc ~/movetodotfiles/.config ~/ 
-```
-7. start zsh or restart terminal
-```sh
-zsh
-```
+6. start restart terminal restart terminal
 
+
+Usefull ketbindings:
+
+``` bindings
+super + q = quit
+super + w = firefox
+super + d = program menu
+super + n = file browser
+super + 
+super + 
+super + 
+super + 
+
+super and hold right mouse button = resize window
+super and hold left mouse button = move window posision
+```
+to see all bindings:
+```bash
+mybindings
+```
+to see all zsh terminal alias and settings
+```sh
+zshconf
+```
